@@ -41,4 +41,4 @@ was "querying a remote calendar and linking to its reader page in the remote con
 
 The are used in the template and are probably be useless elsewhere!
 
-They thus might be removed in a future Version!
+They thus might be removed in a future version!
