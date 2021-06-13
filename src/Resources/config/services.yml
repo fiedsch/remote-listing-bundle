@@ -1,0 +1,16 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: true
+
+  Fiedsch\RemoteListingBundle\Controller\ContentElement\RemoteListingController:
+    arguments:
+      - '@doctrine.dbal.remote_connection'
+    tags:
+      -
+        name: contao.content_element
+        category: remotelisting
+        type: remotelisting
+        template: ce_remotelisting
+        renderer: esi

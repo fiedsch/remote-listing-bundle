@@ -1,0 +1,28 @@
+{
+  "name": "fiedsch/remote-listing-bundle",
+  "type": "contao-bundle",
+  "description": "Listings Bundle for 'remote' database connections",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andreas Fieger",
+      "email": "dev@andreas-fieger.de",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "contao/core-bundle": "^4.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "Fiedsch\\RemoteListingBundle\\": "src/"
+    }
+  },
+  "extra": {
+    "contao-manager-plugin": "Fiedsch\\RemoteListingBundle\\ContaoManager\\Plugin",
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}

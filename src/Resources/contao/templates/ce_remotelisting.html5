@@ -1,0 +1,22 @@
+<div <?= $this->cssID ?> class="ce_remotelisting <?= $this->class ?>">
+    <table>
+        <?php foreach ($this->records as $record): ?>
+            <tr class="record">
+                <?php // "id","pid","tstamp","title","alias","author","addTime","startTime","endTime","startDate","endDate","location","teaser","addImage","overwriteMeta","singleSRC","alt","imageTitle","size","imagemargin","imageUrl","fullsize","caption","floating","recurring","repeatEach","repeatEnd","recurrences","addEnclosure","enclosure","source","jumpTo","articleId","url","target","cssClass","noComments","published","start","stop","orderEnclosure","address","description","pageTitle" ?>
+                <?php printf("<td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td>",
+                    \Contao\Date::parse('d.m.Y', $record['startDate']),
+                    \Contao\Date::parse('H:i', $record['startTime']),
+                    $record['title'],
+                    $record['alias'],
+                    sprintf('<a href="%s/%s%s">%s</a>',
+                        $this->remote_calendar_reader_url,
+                        $record['alias'],
+                        $this->remote_url_suffix,
+                        $record['title']
+                    )
+                ); ?>
+            </tr>
+        <?php endforeach; ?>
+    </table>
+</div>
+
