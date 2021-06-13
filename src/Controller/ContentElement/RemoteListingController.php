@@ -43,7 +43,6 @@ class RemoteListingController extends AbstractContentElementController
             return new Response($objTemplate->parse());
         }
 
-        // TODO: aus $model
         $template->remote_calendar_reader_url = $model->remote_calendar_reader_url;
         $template->remote_url_suffix = $model->remote_url_suffix;
 
