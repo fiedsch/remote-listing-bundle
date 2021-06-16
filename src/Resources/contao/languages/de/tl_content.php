@@ -12,7 +12,7 @@ $GLOBALS['TL_LANG']['tl_content']['list_table'] = [
 
 $GLOBALS['TL_LANG']['tl_content']['list_fields'] = [
     'Felder',
-    'Bitte geben Sie eine kommagetrennte Liste der Felder ein, die Sie auflisten möchten.'
+    'Bitte geben Sie eine kommagetrennte Liste der Felder ein, die Sie auflisten möchten. Verwenden Sie <code>*</code> um alle Felder anzusprechen.'
 ];
 
 $GLOBALS['TL_LANG']['tl_content']['list_where'] = [
