@@ -25,12 +25,3 @@ $GLOBALS['TL_LANG']['tl_content']['list_sort'] = [
     'Hier können Sie eine kommagetrennte Liste der Felder eingeben, nach denen die Ergebnisse sortiert werden sollen.'
 ];
 
-$GLOBALS['TL_LANG']['tl_content']['remote_calendar_reader_url'] = [
-    'Remote URL',
-    'URL zum Calendar Reader der Remote Site.'
-];
-
-$GLOBALS['TL_LANG']['tl_content']['remote_url_suffix'] = [
-    'Remote URL Suffix',
-    'URL Suffix der Remote Site (typischerwise <code>.html</code>).'
-];

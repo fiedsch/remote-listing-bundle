@@ -31,14 +31,3 @@ doctrine:
 ## Template
 
 The template provided is just an example. Adapt to your needs in the Contao back end.
-
-
-## Note
-
-The additional fields `remote_calendar_reader_url` and `remote_url_suffix` 
-in the content element's palette are due to the fact that the original use case
-was "querying a remote calendar and linking to its reader page in the remote contao installation".
-
-The are used in the template and are probably be useless elsewhere!
-
-They thus might be removed in a future version!

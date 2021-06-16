@@ -30,19 +30,3 @@ $GLOBALS['TL_DCA']['tl_content']['fields']['list_sort'] = [
     'eval'                    => array('decodeEntities'=>true, 'maxlength'=>255, 'tl_class'=>'w50'),
     'sql'                     => "varchar(255) NOT NULL default ''"
 ];
-
-$GLOBALS['TL_DCA']['tl_content']['fields']['remote_calendar_reader_url']  = [
-    'exclude'                 => true,
-    'inputType'               => 'text',
-    'eval'                    => array('maxlength'=>255, 'tl_class'=>'w50'),
-    'sql'                     => "varchar(255) NOT NULL default ''"
-];
-
-
-$GLOBALS['TL_DCA']['tl_content']['fields']['remote_url_suffix'] = [
-    'exclude'                 => true,
-    'inputType'               => 'text',
-    'eval'                    => array('maxlength'=>255, 'tl_class'=>'w50'),
-    'sql'                     => "varchar(255) NOT NULL default ''"
-];
-

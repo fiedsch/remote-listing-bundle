@@ -1,4 +1,7 @@
-<div <?= $this->cssID ?> class="ce_remotelisting <?= $this->class ?>">
+<?php
+  $remote_calendar_reader_url = 'https://www.example.com/the_calendar_reader';
+  $remote_url_suffix = '.html';
+?><div <?= $this->cssID ?> class="ce_remotelisting <?= $this->class ?>">
     <table>
         <?php foreach ($this->records as $record): ?>
             <tr class="record">
@@ -9,9 +12,9 @@
                     $record['title'],
                     $record['alias'],
                     sprintf('<a href="%s/%s%s">%s</a>',
-                        $this->remote_calendar_reader_url,
+                        $remote_calendar_reader_url,
                         $record['alias'],
-                        $this->remote_url_suffix,
+                        $remote_url_suffix,
                         $record['title']
                     )
                 ); ?>
