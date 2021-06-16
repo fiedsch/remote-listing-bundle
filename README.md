@@ -3,7 +3,14 @@
 Much like Contao's [ListingBundle](https://github.com/contao/contao/tree/4.x/listing-bundle)
 but for a database other than the one from the contao installation.
 
-## Configuration
+
+## Installation
+
+Make sure, you have configured the `romote` database connection (see next section; don't forget to clear/rebuild
+Symfony's cache after the config change). Then run `composer require fiedsch/remote-listing-bundle`.
+
+
+## Configuration 
 
 Provide a database connection named `remote` in `config/config.yml` like so:
 ```
