@@ -14,9 +14,6 @@ use Patchwork\Utf8;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-/**
- * @ContentElement(category="remotelisting")
- */
 class RemoteListingController extends AbstractContentElementController
 {
     protected Connection $connection;
